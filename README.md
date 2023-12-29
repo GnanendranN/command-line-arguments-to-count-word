@@ -6,22 +6,26 @@ PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
 ### Step 1:
-
+import the sys module.
 ### Step 2: 
- 
+Pass the file name as the first argument after the name of the script open the file as sys.argv[1]
 ### Step 3: 
-
+Read the file using read() method.
 ### Step 4:  
-
+use split() method to split the file content into words
 ### Step 5: 
-
+use len() to find the total words
 ### Step 6: 
-
+run the program to determine the number of words in the file created.
 ## PROGRAM:
-
+```
+import sys
+fp = open(sys.argv[1])
+data = fp.read()
+words=data.split()
+print("Total words:",len(words))
+```
 ### OUTPUT:
-
-
-
+![exp5boutput](https://github.com/GnanendranN/command-line-arguments-to-count-word/assets/138955207/d2ecc033-5119-4bc2-abf2-a7e7613c3091)
 ## RESULT:
 Thus the program is written to find the word count from the contents of a file using command line arguments.
